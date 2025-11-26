@@ -1,15 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carlos Eduardo Cupul Hau - Desarrollador de Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-       <h1>Jonathan David Cocom <h1>
-       <p> Ingeniero En Sistemas Computacionales <p>
-    <div>  
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight">Carlos Eduardo</span>
+                    </h1>
+                    <p class="hero-subtitle">Desarrollador de Software</p>
+                    <p class="hero-description">
+                        Transformando ideas en soluciones digitales innovadoras con más de 5 años de experiencia en desarrollo de software.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                        <a href="#experiencia" class="btn btn-secondary">Ver Experiencia</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile-photo.jpg" alt="Carlos Eduardo Cupul Hau" class="profile-photo">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">👨‍💻</div>
+                    <h3>Profesional</h3>
+                    <p>Carlos Eduardo Cupul Hau, apasionado por la tecnología y el desarrollo de software con enfoque en crear soluciones efectivas y escalables.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Ayudar a empresas y emprendedores a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras y de alta calidad.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💡</div>
+                    <h3>Visión</h3>
+                    <p>Crear impacto positivo en la comunidad tech compartiendo conocimiento y experiencia a través de talleres y proyectos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Section -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia & Habilidades</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 12H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 18H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Desarrollo C# & ASP.NET</h3>
+                    </div>
+                    <p class="experience-duration">5 años de experiencia</p>
+                    <p class="experience-description">
+                        Experto en el desarrollo de aplicaciones web robustas y escalables utilizando C# y el framework ASP.NET, implementando soluciones backend de alta calidad.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET</span>
+                        <span class="tag">.NET Core</span>
+                        <span class="tag">MVC</span>
+                        <span class="tag">Web API</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Talleres & Capacitación</h3>
+                    </div>
+                    <p class="experience-duration">Experiencia continua</p>
+                    <p class="experience-description">
+                        Facilitador de talleres en desarrollo de software, compartiendo conocimientos y mejores prácticas con la comunidad de desarrolladores.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Capacitación</span>
+                        <span class="tag">Mentoring</span>
+                        <span class="tag">Best Practices</span>
+                        <span class="tag">Code Review</span>
+                    </div>
+                </div>
+
+                <div class="experience-card featured">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Mis Momentos Digitales</h3>
+                    </div>
+                    <p class="experience-duration">Fundador</p>
+                    <p class="experience-description">
+                        Fundador y líder de "Mis Momentos Digitales", emprendimiento dedicado a crear experiencias digitales memorables y soluciones innovadoras para clientes.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Emprendimiento</span>
+                        <span class="tag">Gestión de Proyectos</span>
+                        <span class="tag">Innovación</span>
+                        <span class="tag">Liderazgo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Tecnologías</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">C#</div>
+                    <p>C Sharp</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">ASP</div>
+                    <p>ASP.NET</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">.NET</div>
+                    <p>.NET Core</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">SQL</div>
+                    <p>SQL Server</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">API</div>
+                    <p>REST APIs</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">Git</div>
+                    <p>Version Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">¿Listo para trabajar juntos?</h2>
+            <p class="contact-subtitle">
+                Estoy disponible para proyectos freelance, colaboraciones y oportunidades de capacitación.
+            </p>
+            <div class="contact-buttons">
+                <a href="mailto:carlos@example.com" class="btn btn-primary btn-large">Enviar Email</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary btn-large">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Carlos Eduardo Cupul Hau. Todos los derechos reservados.</p>
+            <p class="footer-tagline">Desarrollando el futuro, una línea de código a la vez.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
