@@ -1,294 +1,795 @@
---- a/index.html
-+++ b/index.html
-@@ -1,11 +1,11 @@
--<!DOCTYPE html>
--<html lang="es">
--<head>
--    <meta charset="UTF-8">
--    <meta name="viewport" content="width=device-width, initial-scale=1.0">
--    <title>Carlos Eduardo Cupul Hau - Desarrollador de Software</title>
--    <!-- Bootstrap CSS -->
--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
--    <link rel="stylesheet" href="styles.css">
--    <link rel="preconnect" href="https://fonts.googleapis.com">
--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
--    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
--</head>
--<body>
--    <!-- Hero Section -->
--    <section class="hero bg-light py-5">
--        <div class="container">
--            <div class="row align-items-center">
--                <div class="col-md-6">
--                    <h1 class="hero-title display-4 fw-bold">
--                        Hola, soy <span class="highlight">Carlos Eduardo</span>
--                    </h1>
--                    <p class="hero-subtitle lead">Desarrollador de Software</p>
--                    <p class="hero-description">
--                        Transformando ideas en soluciones digitales innovadoras con más de 5 años de experiencia en desarrollo de software.
--                    </p>
--                    <div class="hero-buttons">
--                        <a href="#contacto" class="btn btn-primary me-2">Contáctame</a>
--                        <a href="#experiencia" class="btn btn-secondary">Ver Experiencia</a>
--                    </div>
--                </div>
--                <div class="col-md-6">
--                    <div class="image-container">
--                        <img src="profile-photo.jpg" alt="Carlos Eduardo Cupul Hau" class="profile-photo img-fluid rounded-circle">
--                        <div class="image-decoration"></div>
--                    </div>
--                </div>
--            </div>
--        </div>
--    </section>
--
--    <!-- Sobre Mí Section -->
--
--    <section id="sobre-mi" class="about py-5">
--        <div class="container">
--            <h2 class="section-title text-center mb-4">Sobre Mí</h2>
--            <div class="row">
-+    <!DOCTYPE html>
-+    <html lang="es">
-+    <head>
-+        <meta charset="UTF-8">
-+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-+        <title>Carlos Eduardo Cupul Hau - Desarrollador de Software</title>
-+        <!-- Bootstrap CSS -->
-+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-+        <link rel="stylesheet" href="styles.css">
-+        <link rel="preconnect" href="https://fonts.googleapis.com">
-+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-+    </head>
-+    <body>
-+        <!-- Hero Section -->
-+        <section class="hero bg-light py-5">
-+            <div class="container">
-+                <div class="row align-items-center">
-+                    <div class="col-md-6">
-+                        <h1 class="hero-title display-4 fw-bold">
-+                            Hola, soy <span class="highlight">Carlos Eduardo</span>
-+                        </h1>
-+                        <p class="hero-subtitle lead">Desarrollador de Software</p>
-+                        <p class="hero-description">
-+                            Transformando ideas en soluciones digitales innovadoras con más de 5 años de experiencia en desarrollo de software.
-+                        </p>
-+                        <div class="hero-buttons">
-+                            <a href="#contacto" class="btn btn-primary me-2">Contáctame</a>
-+                            <a href="#experiencia" class="btn btn-secondary">Ver Experiencia</a>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-6">
-+                        <div class="image-container">
-+                            <img src="profile-photo.jpg" alt="Carlos Eduardo Cupul Hau" class="profile-photo img-fluid rounded-circle">
-+                            <div class="image-decoration"></div>
-+                        </div>
-+                    </div>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <!-- Sobre Mí Section -->
-+        <section id="sobre-mi" class="about py-5">
-+            <div class="container">
-+                <h2 class="section-title text-center mb-4">Sobre Mí</h2>
-+                <div class="row">
-+                    <div class="col-md-4">
-+                        <div class="card text-center h-100">
-+                            <div class="card-body">
-+                                <div class="card-icon">👨‍💻</div>
-+                                <h3 class="card-title">Profesional</h3>
-+                                <p class="card-text">Carlos Eduardo Cupul Hau, apasionado por la tecnología y el desarrollo de software con enfoque en crear soluciones efectivas y escalables.</p>
-+                            </div>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-4">
-+                        <div class="card text-center h-100">
-+                            <div class="card-body">
-+                                <div class="card-icon">🎯</div>
-+                                <h3 class="card-title">Misión</h3>
-+                                <p class="card-text">Ayudar a empresas y emprendedores a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras y de alta calidad.</p>
-+                            </div>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-4">
-+                        <div class="card text-center h-100">
-+                            <div class="card-body">
-+                                <div class="card-icon">💡</div>
-+                                <h3 class="card-title">Visión</h3>
-+                                <p class="card-text">Crear impacto positivo en la comunidad tech compartiendo conocimiento y experiencia a través de talleres y proyectos.</p>
-+                            </div>
-+                        </div>
-+                    </div>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <!-- Experiencia Section -->
-+        <section id="experiencia" class="experience py-5 bg-light">
-+            <div class="container">
-+                <h2 class="section-title text-center mb-4">Experiencia & Habilidades</h2>
-+                <div class="row">
-+                    <div class="col-md-4">
-+                        <div class="card h-100">
-+                            <div class="card-body">
-+                                <div class="experience-header">
-+                                    <div class="experience-icon">
-+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-+                                            <path d="M8 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M8 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M8 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M3 6H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M3 12H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M3 18H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                        </svg>
-+                                    </div>
-+                                    <h3 class="card-title">Desarrollo C# & ASP.NET</h3>
-+                                </div>
-+                                <p class="experience-duration">5 años de experiencia</p>
-+                                <p class="experience-description">
-+                                    Experto en el desarrollo de aplicaciones web robustas y escalables utilizando C# y el framework ASP.NET, implementando soluciones backend de alta calidad.
-+                                </p>
-+                                <div class="tech-tags">
-+                                    <span class="badge bg-primary me-1">C#</span>
-+                                    <span class="badge bg-primary me-1">ASP.NET</span>
-+                                    <span class="badge bg-primary me-1">.NET Core</span>
-+                                    <span class="badge bg-primary me-1">MVC</span>
-+                                    <span class="badge bg-primary">Web API</span>
-+                                </div>
-+                            </div>
-+                        </div>
-+                    </div>
-+
-+                    <div class="col-md-4">
-+                        <div class="card h-100">
-+                            <div class="card-body">
-+                                <div class="experience-header">
-+                                    <div class="experience-icon">
-+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-+                                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                        </svg>
-+                                    </div>
-+                                    <h3 class="card-title">Talleres & Capacitación</h3>
-+                                </div>
-+                                <p class="experience-duration">Experiencia continua</p>
-+                                <p class="experience-description">
-+                                    Facilitador de talleres en desarrollo de software, compartiendo conocimientos y mejores prácticas con la comunidad de desarrolladores.
-+                                </p>
-+                                <div class="tech-tags">
-+                                    <span class="badge bg-primary me-1">Capacitación</span>
-+                                    <span class="badge bg-primary me-1">Mentoring</span>
-+                                    <span class="badge bg-primary me-1">Best Practices</span>
-+                                    <span class="badge bg-primary">Code Review</span>
-+                                </div>
-+                            </div>
-+                        </div>
-+                    </div>
-+
-+                    <div class="col-md-4">
-+                        <div class="card h-100">
-+                            <div class="card-body">
-+                                <div class="experience-header">
-+                                    <div class="experience-icon">
-+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-+                                        </svg>
-+                                    </div>
-+                                    <h3 class="card-title">Mis Momentos Digitales</h3>
-+                                </div>
-+                                <p class="experience-duration">Fundador</p>
-+                                <p class="experience-description">
-+                                    Fundador y líder de "Mis Momentos Digitales", emprendimiento dedicado a crear experiencias digitales memorables y soluciones innovadoras para clientes.
-+                                </p>
-+                                <div class="tech-tags">
-+                                    <span class="badge bg-primary me-1">Emprendimiento</span>
-+                                    <span class="badge bg-primary me-1">Gestión de Proyectos</span>
-+                                    <span class="badge bg-primary me-1">Innovación</span>
-+                                    <span class="badge bg-primary">Liderazgo</span>
-+                                </div>
-+                            </div>
-+                        </div>
-+                    </div>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <!-- Skills Section -->
-+        <section class="skills py-5">
-+            <div class="container">
-+                <h2 class="section-title text-center mb-4">Tecnologías</h2>
-+                <div class="row justify-content-center">
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">C#</div>
-+                            <p>C Sharp</p>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">ASP</div>
-+                            <p>ASP.NET</p>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">.NET</div>
-+                            <p>.NET Core</p>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">SQL</div>
-+                            <p>SQL Server</p>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">API</div>
-+                            <p>REST APIs</p>
-+                        </div>
-+                    </div>
-+                    <div class="col-md-2 col-sm-4 col-6 mb-3">
-+                        <div class="skill-item text-center">
-+                            <div class="skill-icon">Git</div>
-+                            <p>Version Control</p>
-+                        </div>
-+                    </div>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <!-- Contact Section -->
-+        <section id="contacto" class="contact py-5 bg-light">
-+            <div class="container">
-+                <h2 class="section-title text-center mb-4">¿Listo para trabajar juntos?</h2>
-+                <p class="contact-subtitle text-center">
-+                    Estoy disponible para proyectos freelance, colaboraciones y oportunidades de capacitación.
-+                </p>
-+                <div class="contact-buttons text-center">
-+                    <a href="mailto:carlos@example.com" class="btn btn-primary btn-large me-2">Enviar Email</a>
-+                    <a href="https://linkedin.com" target="_blank" class="btn btn-secondary btn-large">LinkedIn</a>
-+                </div>
-+            </div>
-+        </section>
-+
-+        <!-- Footer -->
-+        <footer class="footer py-3 bg-dark text-white">
-+            <div class="container text-center">
-+                <p>&copy; 2024 Carlos Eduardo Cupul Hau. Todos los derechos reservados.</p>
-+                <p class="footer-tagline">Desarrollando el futuro, una línea de código a la vez.</p>
-+            </div>
-+        </footer>
-+
-+        <!-- Bootstrap JS -->
-+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-+        <script src="script.js"></script>
-+    </body>
-+    </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan David Cocom Noh - Desarrollador de Software</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+    <!-- styles.css -->
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden; /* Hide waves overflow */
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #eee;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .image-container {
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover .profile-photo {
+            transform: scale(1.1);
+        }
+
+        .image-decoration {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 110%;
+            height: 110%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: rotateDecoration 10s linear infinite;
+        }
+
+        @keyframes rotateDecoration {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .hero-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            /* Make sure the waves are above the content */
+            z-index: 0;
+        }
+
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 60px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 5px;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+
+        .about-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+
+        /* Experience Section */
+        .experience {
+            padding: 80px 0;
+            background-color: #e9ecef;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .experience-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .experience-icon {
+            margin-right: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .experience-duration {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .experience-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #007bff;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Featured Experience Card */
+        .experience-card.featured {
+            border: 2px solid #007bff;
+        }
+
+        .experience-card.featured .experience-icon {
+            background-color: #fff;
+            color: #007bff;
+            border: 2px solid #007bff;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .skill-item {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: #e9ecef;
+            text-align: center;
+        }
+
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .btn-large {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-tagline {
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .about {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+                margin-bottom: 50px;
+            }
+
+            .experience {
+                padding: 60px 0;
+            }
+
+            .skills {
+                padding: 60px 0;
+            }
+
+            .contact {
+                padding: 60px 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h1 class="hero-title display-4 fw-bold">
+                        Hola, soy <span class="highlight">Carlos Eduardo</span>
+                    </h1>
+                    <p class="hero-subtitle lead">Desarrollador de Software</p>
+                    <p class="hero-description">
+                        Transformando ideas en soluciones digitales innovadoras con más de 5 años de experiencia en desarrollo de software.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary me-2">Contáctame</a>
+                        <a href="#experiencia" class="btn btn-secondary">Ver Experiencia</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="profile-photo.jpg" alt="Jonathan David Cocom Noh" class="profile-photo img-fluid rounded-circle">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="about py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+
+
+
+
+
+
+                            <div class="card-icon">👨‍💻</div>
+                            <h3 class="card-title">Profesional</h3>
+                            <p class="card-text">Jonathan David Cocom Noh, apasionado por la tecnología y el desarrollo de software con enfoque en crear soluciones efectivas y escalables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+
+
+
+
+
+
+                            <div class="card-icon">🎯</div>
+                            <h3 class="card-title">Misión</h3>
+                            <p class="card-text">Ayudar a empresas y emprendedores a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras y de alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+
+
+
+
+
+
+
+
+                            <div class="card-icon">💡</div>
+                            <h3 class="card-title">Visión</h3>
+                            <p class="card-text">Crear impacto positivo en la comunidad tech compartiendo conocimiento y experiencia a través de talleres y proyectos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experiencia Section -->
+    <section id="experiencia" class="experience py-5 bg-light">
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h2 class="section-title text-center mb-4">Experiencia & Habilidades</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 6H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 12H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 18H3.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Desarrollo C# & ASP.NET</h3>
+                            </div>
+                            <p class="experience-duration">5 años de experiencia</p>
+                            <p class="experience-description">
+                                Experto en el desarrollo de aplicaciones web robustas y escalables utilizando C# y el framework ASP.NET, implementando soluciones backend de alta calidad.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary me-1">C#</span>
+                                <span class="badge bg-primary me-1">ASP.NET</span>
+                                <span class="badge bg-primary me-1">.NET Core</span>
+                                <span class="badge bg-primary me-1">MVC</span>
+                                <span class="badge bg-primary">Web API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Talleres & Capacitación</h3>
+                            </div>
+                            <p class="experience-duration">Experiencia continua</p>
+                            <p class="experience-description">
+                                Facilitador de talleres en desarrollo de software, compartiendo conocimientos y mejores prácticas con la comunidad de desarrolladores.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary me-1">Capacitación</span>
+                                <span class="badge bg-primary me-1">Mentoring</span>
+                                <span class="badge bg-primary me-1">Best Practices</span>
+                                <span class="badge bg-primary">Code Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <div class="experience-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Mis Momentos Digitales</h3>
+                            </div>
+                            <p class="experience-duration">Fundador</p>
+                            <p class="experience-description">
+                                Fundador y líder de "Mis Momentos Digitales", emprendimiento dedicado a crear experiencias digitales memorables y soluciones innovadoras para clientes.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="badge bg-primary me-1">Emprendimiento</span>
+                                <span class="badge bg-primary me-1">Gestión de Proyectos</span>
+                                <span class="badge bg-primary me-1">Innovación</span>
+                                <span class="badge bg-primary">Liderazgo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills Section -->
+    <section class="skills py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Tecnologías</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">C#</div>
+                        <p>C Sharp</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">ASP</div>
+                        <p>ASP.NET</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">.NET</div>
+                        <p>.NET Core</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">SQL</div>
+                        <p>SQL Server</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">API</div>
+                        <p>REST APIs</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                    <div class="skill-item text-center">
+                        <div class="skill-icon">Git</div>
+                        <p>Version Control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contacto" class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">¿Listo para trabajar juntos?</h2>
+            <p class="contact-subtitle text-center">
+                Estoy disponible para proyectos freelance, colaboraciones y oportunidades de capacitación.
+            </p>
+            <div class="contact-buttons text-center">
+                <a href="mailto:carlos@example.com" class="btn btn-primary btn-large me-2">Enviar Email</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary btn-large">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Jonathan David Cocom Noh. Todos los derechos reservados.</p>
+            <p class="footer-tagline">Desarrollando el futuro, una línea de código a la vez.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
 
